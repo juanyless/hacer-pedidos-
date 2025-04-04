@@ -1,0 +1,71 @@
+body {
+    font-family: sans-serif;
+    margin: 0; /* Elimina el margen predeterminado del body */
+    padding: 0; /* Elimina el padding predeterminado del body */
+  }
+  
+  h1, h2 {
+    text-align: center; /* Centra los títulos */
+  }
+  
+  #productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra los productos horizontalmente */
+    padding: 20px;
+  }
+  
+  .producto {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho */
+  }
+  
+  .producto img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  #pedido-form {
+    max-width: 400px;
+    margin: 20px auto; /* Centra el formulario */
+    padding: 20px;
+    border: 1px solid #eee;
+  }
+  
+  #lista-pedidos {
+    list-style: none;
+    padding: 0;
+    margin: 20px;
+  }
+  
+  #lista-pedidos li {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 5px;
+  }
+  
+  /* Media Queries para Responsividad */
+  
+  /* Para pantallas más pequeñas (móviles) */
+  @media (max-width: 600px) {
+    .producto {
+      width: 100%; /* Los productos ocupan todo el ancho */
+      margin: 10px 0; /* Ajusta los márgenes */
+    }
+  
+    #pedido-form {
+      max-width: 100%; /* El formulario ocupa todo el ancho */
+      margin: 10px;
+    }
+  }
+  
+  /* Para pantallas medianas (tabletas) */
+  @media (min-width: 601px) and (max-width: 1024px) {
+    .producto {
+      width: 45%; /* Dos productos por fila */
+    }
+  }
