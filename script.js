@@ -75,7 +75,7 @@ const productos = [
     const nuevoPedido = { nombre, plato: producto };
   
     try {
-      const respuesta = await fetch('http://localhost:3001/pedidos', {
+      const respuesta = await fetch('https://juanyless.github.io/hacer-pedidos-/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -97,7 +97,7 @@ const productos = [
   // Función para cargar los pedidos existentes
   async function cargarPedidos() {
     try {
-      const respuesta = await fetch('http://localhost:3001/pedidos');
+      const respuesta = await fetch('https://juanyless.github.io/hacer-pedidos-/');
       const pedidos = await respuesta.json();
       pedidos.forEach(mostrarPedido);
     } catch (error) {
